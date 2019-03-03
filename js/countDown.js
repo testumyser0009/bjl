@@ -5,7 +5,7 @@ var Countdown = function () {
         _this.countDownNum.text = num;
         var timer = setInterval(function () {
             _this.countDownNum.text = --num;
-            if (num <= 10) {
+            if (num <= 50) {
                 _this.naozhong.visible = true;
                 if (num == 3) {
                     laya.media.SoundManager.playSound("./res/sounds/da0.mp3", 1); //0表示循环播放

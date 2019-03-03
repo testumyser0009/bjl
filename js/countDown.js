@@ -13,8 +13,8 @@ var Countdown = function () {
             }
             if (num <= 0) {
                 clearInterval(timer);
-                _this.removeSelf();
-                _this.naozhong.visible = false;
+             //   _this.removeSelf();
+             //   _this.naozhong.visible = false;
             }
         }, 1000)
     }

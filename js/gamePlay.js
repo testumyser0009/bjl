@@ -59,6 +59,9 @@ var GamePlay = function () {
             }
             if (data.t == 2) {                       //等待开奖
                 clickFlag = false;
+                LayaSample.countdown.init(data.miao);
+                LayaSample.countdown.pos(340, 523);
+                _this.addChild(LayaSample.countdown);
                 laya.media.SoundManager.playSound("./res/sounds/stop.mp3", 1); //0表示循环播放
                 hintType("over");
             }
